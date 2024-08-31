@@ -8,7 +8,7 @@ import { Button } from './ui/button'
 
 const links = [
     { name: 'Dashboard', href: '/dashboard' },
-    { name: 'Orders', href: '/orders' },
+    { name: 'Negotiate', href: '/Negotiate' },
     { name: 'Inventory', href: '/inventory' },
 ]
 
@@ -24,7 +24,7 @@ const FarmerNavar = () => {
                             links.map((link, index) => (
                                 <Link key={index} href={link.href}
                                     className={`
-                                ${path === link.href ? 'text-white' : 'text-zinc-400 hover:text-white'}
+                                ${path === link.href ? 'text-white' : 'text-gray-300 hover:text-white'}
                                 `}
                                 >
                                     {link.name}

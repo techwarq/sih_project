@@ -1,7 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import React from 'react'
+import FarmerOrders from './FarmerOrders'
 
-const revenue: number = 100000
+const revenue: number = 1000
 const sales: number = 5000
 
 
@@ -35,6 +36,11 @@ const Dashboard = () => {
                     </Card>
 
                 </div>
+
+                <Card className='mt-5 flex flex-col gap-2'>
+                    <h1 className='text-xl font-bold p-2'>Marketplace</h1>
+                    <FarmerOrders />
+                </Card>
             </main>
         </>
     )
